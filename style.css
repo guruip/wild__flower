@@ -87,21 +87,14 @@ textarea {
     color: #B8926B;
 }
 .myphone img {
-	/* content: ""; */
     position: absolute;
     left: -30px;
-    /* bottom: 1px; */
-	/* right: 10px; */
-    /* width: 18px; */
-    /* height: 18px; */
-	/* background: url(icon/icon\ call.png) center center/cover no-repeat; */
 }
 .menu__icon {
 	display: none;
 }
 .menu__list li{
 	position: relative;
-	/* margin-left: 50px; */
 	padding: 10px 20px;
 }
 .menu__link {
@@ -175,9 +168,6 @@ textarea {
 	.menu__list {
 		display: flex;
 		align-items: center;
-	}
-	.menu__list > li {
-		/* padding: 10px 20px; */
 	}
 }
 @media (max-width: 767px) {
@@ -310,7 +300,6 @@ h1 {
 	position: absolute;
 	top: 290px;
 	margin-right: 20px;
-	/* top:10px; */
 }
 .photo__woman img {
 	border-radius: 200px 200px 0 0;
@@ -359,6 +348,7 @@ h1 {
 	font-family: 'Lato';
 	max-width: 500px;
 	font-size: 24px;
+	line-height: 34px;
 }
 button {
 	background-color: #69766D;
@@ -377,6 +367,50 @@ button:hover {
 .conteiner {
 	position: absolute;
 }
+/*--------Адаптив main__block-------*/
+@media (max-width: 767px) {
+	.main__block {
+		display: block;
+		margin: 0;
+	}
+	H1 {
+		font-size: 42px;
+	}
+	.main__photo {
+		display: none;
+	}
+	.main__text {
+		text-align: center;
+		margin-left: 0px;
+	}
+	.main__text p {
+		margin: 0 auto;
+		margin-top: 35px;
+		font-size: 16px;
+	}
+}
+@media (max-width: 320px) {
+	.main__block {
+		display: block;
+		margin: 0;
+	}
+	H1 {
+		font-size: 25px;
+	}
+	.main__photo {
+		display: none;
+	}
+	.main__text {
+		text-align: center;
+		margin-left: 0px;
+	}
+	.main__text p {
+		margin: 0 auto;
+		margin-top: 35px;
+		font-size: 12px;
+	}
+}
+
 /*------Форма-------*/
 form input.error {
     box-shadow: 0 0 10px #c9362c;
@@ -386,7 +420,6 @@ label.error {
 }
 .conteiner__back {
 	display: none;
-	/* display: flex; */
 	justify-content: center;
 	align-items: center;
 	position: absolute;
@@ -394,7 +427,6 @@ label.error {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.8);
-	/* overflow-x: hidden; */
 }
 .conteiner {
 	display: flex;
@@ -403,21 +435,15 @@ label.error {
 	width: 750px;
 	height: 500px;
 	background-color: #F6F6F5;
-	/* background-color: #363636 30%;  */
-	/* min-height: 100vh; */
 }
 form {
-	/* border: 1px solid #c3c3c3; */
-	/* color: ; */
 	padding: 10px;
 	width: 520px;
-	/* margin: 0 auto; */
 }
 form input {
 	width: 100%;
 	height: 40px;
 	border: 1px solid #c3c3c3;
-	/* border-radius: 5px; */
 	margin: 10px 0;
 	padding: 0 15px;
 	display: flex;
